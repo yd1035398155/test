@@ -7,48 +7,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		.coin {
-			width: 100px;
-			height: 100px;
-			margin: 100px;
-			animation: rotate 5s linear infinite;
-			background-color: goldenrod;
-			border-radius: 50%;
-		}
-
-		.coin:hover {
-			animation-play-state: paused;
-		}
-
-		@keyframes rotate {
-			0% {
-				transform: rotate(0deg);
-			}
-
-			100% {
-				transform: rotate(360deg);
-			}
+		.outer {
+			display: flex;
+			height: 400px;
+			width: 400px;
+			align-items: center;
+			justify-content: center;
+			background-color: blue;
 		}
 	</style>
-
+	<!-- <script src="../LRU/LRU.js"></script> -->
+	<!-- <script src="./code.js"></script> -->
+	<script>
+		// set && Array.from
+	</script>
 </head>
 
 <body>
-	<div class="coin"></div>
-
-
 
 	<script>
-		// L ins_of R
-		function ins_of(L, R) {
-			let O = R.prototype;
-			let G = L.__proto__;
-			while (1) {
-				if (G == null) return false
-				if (G == O) return true
-				G = G.__proto__;
-			}
+		const a = Symbol('foo')
+		const b = Symbol('foo')
+		console.log(a, b);
+		let obj = {
+			[a]: "asd",
+			[b]: "aadasdsd"
 		}
+		console.log(obj);
 	</script>
 
 </body>
