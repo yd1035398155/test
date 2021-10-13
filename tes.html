@@ -7,34 +7,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		.outer {
-			display: flex;
-			height: 400px;
-			width: 400px;
-			align-items: center;
-			justify-content: center;
-			background-color: blue;
-		}
+
 	</style>
 	<!-- <script src="../LRU/LRU.js"></script> -->
 	<!-- <script src="./code.js"></script> -->
 	<script>
-		// set && Array.from
+		class Person {
+			constructor(name) {
+				this.name = name
+			}
+		}
+		class Student extends Person {
+			constructor(name, age = 24) {
+				super(name)
+				this.age = age
+			}
+		}
+		let p = new Student("yangdong")
+		console.log(p);
 	</script>
 </head>
 
 <body>
-
-	<script>
-		const a = Symbol('foo')
-		const b = Symbol('foo')
-		console.log(a, b);
-		let obj = {
-			[a]: "asd",
-			[b]: "aadasdsd"
-		}
-		console.log(obj);
-	</script>
 
 </body>
 
