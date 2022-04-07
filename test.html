@@ -34,23 +34,15 @@
     </div>
 
     <!-- 代码区 -->
-    <script>
-      function smallest(a, b) {
-        a.sort((a, b) => a - b)
-        b.sort((a, b) => a - b)
-        let n = a.length
-        let m = b.length
-        let [i, j] = [0, 0]
-        let res = 100000
-        while (i < n && j < m) {
-          res = Math.min(res, Math.abs(a[i] - b[j]))
-          if (a[i] > b[j]) ++j
-          else ++i
-        }
-        return res
-      }
-    </script>
 
+    <script>
+      var o1 = { a: 1 }
+      var o2 = { b: 2 }
+      var o3 = { a: 2 }
+
+      var obj = Object.assign(o1, o2, o3)
+      console.log(obj)
+    </script>
     <script>
       /*
 			 ## 创建对象的方法
